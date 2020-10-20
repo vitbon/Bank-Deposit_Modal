@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="modal.css">
+  <title>Увеличение депозита</title>
+</head>
+<body>
+  <button id="modal_btn">Открыть модалку</button>
+
+  <div id="modal">
+    <div class="modal__content">
+
+      <div class="modal__header">
+        <span id="percent_plus">+100%</span>
+        <span class="close">&times;</span>
+        <span id="modal__header__timer">
+          <img src="./pics/timer.svg" alt="timer icon" />
+          <span id="modal__header__clock">00:15:59</span>
+        </span>
+      </div>
+
+      <div class="modal__body">
+        <h2>Увеличьте свой депозит!</h2>
+
+        <div class="select">
+          <select name="slct" id="slct">
+            <option value="1">Банковская карта</option>
+            <option value="2">Биткоин</option>
+            <option value="3">Выставить счет</option>
+          </select>
+        </div>
+
+        <span id="add50" class="add50">
+          <p>Пополнить на</p>
+          <p class="fs22px">$&nbsp;50</p>
+          <p>&nbsp;</p>
+          <p class="green_color">Получить</p>
+          <p class="green_color fs22px">$&nbsp;100</p>
+          <img src="./pics/block_empty.svg" id="block_pic50" />
+        </span>
+
+       <span id="add100" class="add100">
+        <p>Пополнить на</p>
+        <p class="fs22px">$&nbsp;100</p>
+        <p>&nbsp;</p>
+        <p class="green_color">Получить</p>
+        <p class="green_color fs22px">$&nbsp;200</p>
+        <img src="./pics/block_empty.svg" id="block_pic100" />
+      </span>
+
+      <span id="add500" class="add500">
+        <p>Пополнить на</p>
+        <p class="fs22px">$&nbsp;500</p>
+        <p>&nbsp;</p>
+        <p class="green_color">Получить</p>
+        <p class="green_color fs22px">$&nbsp;1000</p>
+        <img src="./pics/block_empty.svg" id="block_pic500" />
+      </span>
+      
+      <p class="payed_money">
+        <span id="payed" class="green_color">$0,</span><span id="payed_index" class="green_color">00</span>
+          &nbsp;будет зачислено вам на счет
+      </p>
+
+      <button id="pay_btn">Пополнить</button>
+
+    </div>
+
+    <div class="modal__footer">
+      <p class="describe">При пополнении счета с банковской карты списание средств <br>
+        происходит по курсу банка клиента
+      </p>
+      <br>
+      <span>
+        <a class="describe_link" href="#">Подробнее</a>
+      </span>
+    </div>
+
+  </div>
+  <script defer src="modal.js"></script>
+</body>
+</html>
