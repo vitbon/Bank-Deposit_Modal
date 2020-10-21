@@ -316,20 +316,6 @@ h2 {
   border: 2px solid #c9d4e5;
 }
 
-.add500:hover img  {
-  background: url("./pics/block_done.svg");
-  z-index: 30;
-}
-
-.add50::before:hover, .add100::before:hover, .add500::before:hover {
-  position: absolute;
-  top: 170px;
-  left: 67px;
-  z-index: 22;
-  opacity: 1;
-  background: url("./pics/block_done.svg");
-}
-
 .block_click, .block_click:hover {
   transform: scale(1.2);
   border: 2px solid #83F6B1;
